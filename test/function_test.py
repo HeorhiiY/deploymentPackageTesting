@@ -1,5 +1,4 @@
 import unittest
-import numpy as np
 from mymodule.functions import say_hi
 class TestFunction(unittest.TestCase):
     def test_say_hi(self):
