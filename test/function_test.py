@@ -1,6 +1,6 @@
 import unittest
 import numpy as np
-from mymodule.functions import say_hi, make_np_array, sum
+from mymodule.functions import say_hi, make_np_array, sum, division
 class TestFunction(unittest.TestCase):
     def test_say_hi(self):
         name = 'Brandon'
@@ -18,5 +18,13 @@ class TestFunction(unittest.TestCase):
         b = 5
         result = 9
         self.assertEqual(result, sum(a,b))
+
+
+    def test_division(self):
+        a = 2
+        b = 2
+        result = 1
+
+        self.assertEqual(result, division(a,b))
 
 

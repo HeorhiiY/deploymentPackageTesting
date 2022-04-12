@@ -8,3 +8,7 @@ def make_np_array(array):
 
 def sum(a,b):
     return a+b
+
+
+def division(a,b):
+    return a/b
