@@ -9,8 +9,8 @@
 name: general pipeline from testing to upload
 
 on:
-#  release:
-#    types: [published]
+  release:
+    types: [published]
   workflow_dispatch:
     inputs:
       logLevel:
