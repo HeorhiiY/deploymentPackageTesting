@@ -1,6 +1,6 @@
 import unittest
 import numpy as np
-from mymodule.functions import say_hi, make_np_array
+from mymodule.functions import say_hi, make_np_array, sum
 class TestFunction(unittest.TestCase):
     def test_say_hi(self):
         name = 'Brandon'
@@ -11,5 +11,12 @@ class TestFunction(unittest.TestCase):
         ar = [3,3,3]
         expected_result = np.array(ar)
         self.assertTrue(np.alltrue(expected_result == make_np_array(ar)))
+
+
+    def test_sum(self):
+        a = 4
+        b = 5
+        result = 9
+        self.assertEqual(result, sum(a,b))
 
 

@@ -5,3 +5,6 @@ def say_hi(name):
 
 def make_np_array(array):
     return np.array(array)
+
+def sum(a,b):
+    return a+b
